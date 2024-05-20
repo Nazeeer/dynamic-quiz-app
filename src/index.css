@@ -11,3 +11,296 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+
+.quiz-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+
+.options {
+  list-style: none;
+  padding: 0;
+}
+
+.option {
+  margin-bottom: 15px;
+}
+
+.option label {
+  display: block;
+  padding: 12px 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.option label:hover {
+  background-color: #e0e0e0;
+}
+
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styles */
+.modal-containerr {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-container {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%; 
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Modal open */
+.modal-containerr{
+  display: none;
+}
+
+.isOpen {
+  display: block;
+}
+
+.modal-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.modal-container p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #d4442e;
+}
+
+.quiz h2{
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+
+/* Main container */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Quiz container */
+.quiz {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Correct answers display */
+.correct-answers {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: end;
+}
+
+/* Question styles */
+.question h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center !important;
+}
+
+/* Form container */
+.form-container {
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Form input styles */
+.form-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 26px;
+}
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  font-size: 18px;
+  /* text-align: center; */
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  color: #333; 
+  background-color: #f9f9f9; 
+}
+
+
+
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Answer button styles */
+.answer-btn {
+  padding: 12px 0;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  width: 90%; 
+  max-width: 300px;
+  text-align: center;
+}
+
+.answer-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Next question button styles */
+.next-question {
+  width: 90%;
+  padding: 12px 0;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  font-size: 18px;
+  text-align: center !important; 
+  display: block;
+  margin: 0 auto ;
+  margin-top: 20px !important;
+}
+
+.next-question:hover {
+  background-color: #0056b3;
+}
